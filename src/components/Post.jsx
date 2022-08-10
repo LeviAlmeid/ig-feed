@@ -15,7 +15,13 @@ export function Post(){
                 <time dateTime=''>Publicado há 1h</time>
             </header>
 
-            <div className={styles.content}></div>
+            <div className={styles.content}>
+                <p>Fala Galera</p>
+
+                <p>Acabei de subir mais um projeto no meu portifólio. É um projeto que fiz no Ignite.</p>
+                
+                <p>#tec #nextlevel</p>
+            </div>
         </article>
     )
 }
