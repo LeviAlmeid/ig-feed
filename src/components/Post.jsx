@@ -20,8 +20,22 @@ export function Post(){
 
                 <p>Acabei de subir mais um projeto no meu portifólio. É um projeto que fiz no Ignite.</p>
                 
-                <p>#tec #nextlevel</p>
+                <a href='#'>#tec</a>{' '}
+                <a href='#'>#nextlevel</a>
             </div>
+
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
+
+                <textarea
+                    placeholder='Deixe um comentário'
+                />
+                <footer>
+                <button type='submit'>Publicar</button>
+
+                </footer>
+            </form>
         </article>
     )
 }
