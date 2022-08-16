@@ -53,15 +53,6 @@
 
     transition: color 0.1s, background-color 0.1s;
 }
-
-.avatar{
-    width: calc(3rem + 12px);
-    height: calc(3rem + 12px);
-    border-radius: 8px;
-    border: 4px solid var(--gray-700);
-    outline: 2px solid var(--green-500);
-}
-
 .sidebar footer a:hover{
     background: var(--green-500);
     color: var(--white);
