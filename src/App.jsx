@@ -26,7 +26,7 @@ const posts = [
     id: 2,
     author: {
       avatarUrl: 'https://github.com/maykbrito.png',
-      name: '<Mayk Brito>',
+      name: 'Mayk Brito',
       role: 'Educator'
     },
     content: [
@@ -49,8 +49,16 @@ function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post />
-          <Post />
+          {posts.map(post => {
+            return(
+              <Post 
+              author={post.author}
+              content={post.content}
+              publishedAt={post.publishedAt}
+              />
+
+            ) 
+          })}
         </main>
       </div>
 
