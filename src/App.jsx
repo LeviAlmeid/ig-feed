@@ -22,22 +22,6 @@ const posts = [
     ],
     publishedAt: new Date('2022-05-03 20:00:00'),
   },
-  {
-    id: 2,
-    author: {
-      avatarUrl: 'https://github.com/maykbrito.png',
-      name: 'Mayk Brito',
-      role: 'Educator'
-    },
-    content: [
-      {type: 'paragraph', content: 'Fala Galera'},
-      {type: 'paragraph', content:       'Acabei de subir mais um projeto no meu portifólio.É um projeto que fiz no Ignite.',
-    },
-    {type: 'link', content: 'levi.design/doctorcate'}
-
-    ],
-    publishedAt: new Date('2022-05-10 20:00:00'),
-  },
   
 ]
 

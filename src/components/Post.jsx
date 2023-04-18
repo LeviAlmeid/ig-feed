@@ -40,50 +40,18 @@ export function Post({ author, publishedAt, content }){
     return(
         <article className={styles.post}>
             <header>
-                <div className={styles.author}>
-                    <Avatar  src={author.avatarUrl} />
-                    <div className={styles.authorInfo}>
-                        <strong>{author.name}</strong>
-                        <span>author.role</span>
-                    </div>
+                <div>
+                    <h2><strong>Aprensentação</strong></h2>
+
                 </div>
 
-                <time title={publishedDateFormatted} dateTime={publishedAt.toISOString()}>
-                    {publishedDateRelativeToNow}
-                </time>
             </header>
 
             <div className={styles.content}>
-                {content.map(line => {
-                    if(line.type === 'paragraph'){
-                        return <p>{line.content}</p>
-                    }else if(line.type === 'link'){
-                        return <p><a href="#">{line.content}</a></p>
-                    }
-                })}
+                <h4>Sou desenvolvedor full-stack, estudante de ciência da computação e apaixonado por tecnologia. Atualmente trabalho com desenvolvimento de software, utilizando linguagens como: JavaScript, HTML, CSS, PHP, AJAX e Banco de Dados.</h4>
             </div>
 
-
-            <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
-                <strong>Deixe seu feedback</strong>
-
-                <textarea
-                    name='comment'
-                    value={newCommentText}
-                    placeholder='Deixe um comentário'
-                    onChange={handleNewCommentChange}
-                />
-                <footer>
-                <button type='submit'>Publicar</button>
-
-                </footer>
-            </form>
-
-            <div className={styles.commentList}>
-                {comments.map(comment => {
-                    return <Comment content = {comment}/>
-                })}
-            </div>
+            
         </article>
     )
 }
