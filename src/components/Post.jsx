@@ -48,7 +48,10 @@ export function Post({ author, publishedAt, content }){
             </header>
 
             <div className={styles.content}>
-                <h4>Sou desenvolvedor full-stack, estudante de ciência da computação e apaixonado por tecnologia. Atualmente trabalho com desenvolvimento de software, utilizando linguagens como: JavaScript, HTML, CSS, PHP, AJAX e Banco de Dados.</h4>
+                <h4>Apaixonado pela área de tecnologia e por programação desde que a conheci. 
+                    Gosto de aprender ferramentas novas e de pensar em como resolver os problemas da melhor maneira. Atualmente, trabalho na área de desenvolvimento, utilizo algumas tecnologias como: JavaScript, HTML, CSS e PHP, como também algumas relacionadas a banco de dados: SQL e MySql.
+                    Estou estudando ReactJS, junto também com Typescript, NodeJS, SASS e REST API. 
+                    Por questões de preferencias, sou mais familiarizado com o front-end, porém meu foco é me tornar um desenvolvedor full-stack.</h4>
             </div>
 
             
